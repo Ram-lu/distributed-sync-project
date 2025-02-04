@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -128,3 +129,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+=======
+/api-users/node_modules
+/api-orders/node_modules
+/api-gateway/node_modules
+>>>>>>> master
