@@ -1,0 +1,28 @@
+{
+  "name": "api-users",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon app.js",
+    "migrate": "npx drizzle-kit migrate --config=./src/infrastructure/db/drizzle.config.js",
+    "generate" : "npx drizzle-kit generate --config=./src/infrastructure/db/drizzle.config.js",
+    "studio": "npx drizzle-kit studio --config=./src/infrastructure/db/drizzle.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.39.1",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.4"
+  }
+}
