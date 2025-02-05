@@ -1,6 +1,8 @@
 const userService = require('../../core/services/UserService');
 
 const registerUser = async (req, res) => {
+    // console.log("-----------------user controller-------------", req)
+
     try {
         const newUser = await userService.createUser(req.body)
         res.status(201).json(newUser)

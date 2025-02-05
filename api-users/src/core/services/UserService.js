@@ -9,9 +9,11 @@ class UserService {
     }
 
     async createUser(userData){
+        
         const errors = validationResult(userData);
         if (!errors.isEmpty()) throw new Error({ message: 'Validation failed', errors: errors.array() })
-        
+        console.log("-----------------user service----------------", userData)
+    
         const existingUser = await this.userRepository.findByEmail(userData.email)
         if (existingUser) throw new Error('User already exists')
         
